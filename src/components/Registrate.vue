@@ -1,25 +1,29 @@
 <template>
     <div class="registrate">
         <div class="containerRegistrate">
-            <h2>Registrate</h2>
-            <form v-on:submit.prevent="processRegistrate" >
-                <input type="email" v-model="user.email" placeholder="Correo electronico">
-                <br>
-                <input type="password" v-model="user.password" placeholder="Password">
-                <br>
-                <input type="text" v-model="user.nombreComunidad" placeholder="Nombre Comunidad">
-                <br>
-                <input type="text" v-model="user.oficio" placeholder="Oficio">
-                <br>
-                <input type="text" v-model="user.region" placeholder="Región">
-                <br>
-                <input type="number" v-model="user.cuenta.cantidadProductos" placeholder="Cantidad de productos">
-                <br>
-                <button type="submit">Registrate!!</button>
-            </form>
+            <div class="formulario">
+                <h2>Registrate</h2>
+               <form v-on:submit.prevent="processRegistrate" >
+                 <input type="email" v-model="user.email" placeholder="Correo electronico">
+                 <br>
+                 <input type="password" v-model="user.password" placeholder="Password">
+                 <br>
+                 <input type="text" v-model="user.nombreComunidad" placeholder="Nombre Comunidad">
+                 <br>
+                 <input type="text" v-model="user.oficio" placeholder="Oficio">
+                 <br>
+                 <input type="text" v-model="user.region" placeholder="Región">
+                 <br>
+                 <input type="number" v-model="user.cuenta.cantidadProductos" placeholder="Cantidad de productos">
+                 <br>
+                 <button type="submit">Registrate!!</button>
+               </form>
+            </div>
+            <div class="imagen8">
+              <img src="https://artesaniasdecolombia.com.co/Documentos/Catalogo/305_mochila-arhuaca-g.png" ><p>Mochila - pueblo indígena Arhuaco</p>
+            </div>    
+         </div>
         </div>
-    </div>
-    
 </template>
 
 <script>
@@ -59,7 +63,7 @@
               }
 
               this.$emit('completedRegistrate', dataRegistrate)
-              alert("usuario registrado")
+              //alert("usuario registrado")
               })
                .catch((error) => {
                     console.log(error)
@@ -72,54 +76,88 @@
 </script>
 
 <style >
-
+*{
+  margin:0;
+  padding: 0;
+}
 .registrate{
-        margin: 0;
-        padding: 0%;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin  : 100px 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .containerRegistrate {
-        border: 3px solid #283747;
+.containerRegistrate .formulario {
+        border: 3px solid #0F362D;
         border-radius: 10px;
-        width: 25%;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 60%;
+        height: 70%;
+        padding: 5%;
+        margin: 100px;
+        position: relative;
+        top:-20%;
+        right: 5%;
+}
+
+.containerRegistrate .imagen8 img{
+       width: 700px;
+       display: grid;
+       position: absolute;
+       top:160px;
+       right: 130px;
+}
+
+.containerRegistrate .imagen8 p{
+       display: grid;
+       position: absolute;
+       font-size: 10px;
+       top:660px;
+       right: 440px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
     .registrate h2{
-        color: #283747;
+        color: #0F362D;
+        align-items: center;
+        padding: 10px 85px ;
+        margin: 0px auto;
+        position: absolute;
+        top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .registrate form{
-        width: 70%;
+        width: 95%;
+        
     }
     .registrate input{
         height: 40px;
         width: 100%;
         box-sizing: border-box;
         padding: 10px 20px;
-        margin: 5px 0;
-        border: 1px solid #283747;
+        margin: 5px 10px;
+        border: 1px solid #0F362D;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .registrate button{
         width: 100%;
         height: 40px;
         color: #E5E7E9;
-        background: #283747;
+        background: #0F362D;
         border: 1px solid #E5E7E9;
         border-radius: 5px;
-        padding: 10px 25px;
-        margin: 5px 0 25px 0;
+        padding: 10px 26px;
+        margin: 30px 0px 20px 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+        position: relative;
+        top: 18px;
     }
     .registrate button:hover{
         color: #E5E7E9;
-        background: crimson;
-        border: 1px solid #283747;
+        background: #EF5B5B;
+        border: 1px solid #EF5B5B;
     }
 
 </style>
