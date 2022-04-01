@@ -3,27 +3,17 @@
         
          <div class="contenido">
          <h1>Bienvenidas comunidades!! </h1>
-         <h2>su registro le premitira dar a conocer los diferentes productos de su comunidad, así como conocer los productos fabricados por otras comunidades del pais</h2>
-         <h2> para registrar sus productos debera seguir estos pasos: </h2>
-        
-         <ol>
-            <li>
-                ingrese a la pestaña de formulario de comunidad y diligencie sus datos
-            </li>
-            <li>
-                ingrese a la pestaña de formulario de producto y diligencie sus datos
-            </li>
-            <li>
-                ingrese a la pestaña de formulario de producto por comunidad y diligencie donde asociara su producto a su comunidad
-            </li>
-            <li>
-                en la pestaña final podra visualizar los productos ingresados por comunidad
-            </li>
-         </ol> 
-         </div>  
-         <div class="imagen">
-             <img src="https://i.pinimg.com/736x/0c/95/1d/0c951db207fc0a57a9f90a0f270ca65b--http-header-chihuahua.jpg" >
-         </div>
+         <p>Fique es una plataforma que le permitirá registrar los diferentes productos de su comunidad, así como llevar un inventario organizado 
+          de los mismos esto nos ayudara a crear una base datos a nivel nacional con todos los productos elaborados por comunidades indígenas, adicional 
+          a esto su registro le permitirá conocer las noticias del sector, participar de eventos y actividades con las que cada comunidad puede dar a conocer 
+          no solo las costumbres de los pueblos sino los productos autóctonos de cada región.</p> 
+         </div> 
+          <div>
+             <div class="imagen1">
+             <img src="https://artesaniasdecolombia.com.co/Documentos/Catalogo/3708_werregue-mediano-g.png" ><p>Canasto de Werregue - pueblo indígena Wounaan</p>
+          </div>
+         </div> 
+         
     </div>
 </template>
 
@@ -33,17 +23,19 @@
 
 <style>
  .home {
-        margin         : 5%;
         padding        : 2%;
-        height         : 10px;
+        height         : 20px;
         width          : 100%;
-        /*justify-content: center;
-        align-items    : center;*/
+        justify-content: space-between;
+        align-items    : center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         /*espaciado*/
-        gap:35px;
+        gap:48px;
         margin:auto;
+        position: relative;
+        top:0%;
+        left: 1%;
       
     }
     .home .contenido {
@@ -53,14 +45,16 @@
         border: 3px solid #0F362D;
         border-radius: 10px;
         width: 90%;
-        height: 70%;
-        padding: 5%;
+        height: 90%;
         margin: 15px;
         background-color:#0F362D;
+        position: relative;
+        top:1%;
+        left: 15%;
     }
 
     .home .contenido h1{
-        margin : 20px;
+        margin : 40px;
         font-size: 30px;
         color    : #fff; 
         display: flex;
@@ -69,31 +63,32 @@
         line-height: 1;
         font-family: sans-serif;
     }
-    .home .contenido h2{
-        margin : 20px;
-        font-size: 15px;
+    .home .contenido p{
+        margin : 50px;
+        font-size: 17px;
         color    : #fff; 
         display: flex;
         align-items    : center;
         justify-content: center;
-        font-family: sans-serif;
         line-height: 1.5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .home .contenido ol{
-        margin : 20px;
-        font-size: 13px;
-        color    : #fff; 
-        text-align: left;
-        font-family: sans-serif;
-        line-height: 1.5;
-        font-weight: lighter;
     
-    }
+    .imagen1 img{
+        height: 110%;
+        width:90%;
+        display: flex;
+        position: relative;
+        top: -50%; 
+        left: 5%;
 
-    .imagen img{
-        height: 70%;
-    
-        
+    }
+    .imagen1 p{
+        font-size: 10px;
+        text-align: center;
+        padding-inline-end: 10px;
+        display: grid;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
 </style>
