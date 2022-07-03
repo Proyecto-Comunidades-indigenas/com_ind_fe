@@ -49,4 +49,4 @@ la parte sombreada hace referencia al despliegue de componentes de la parte fron
 
 El proyecto se encuentra desplegado en la plataforma heroku:
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+https://com-ind-frontend.herokuapp.com/#/user/inicio
